@@ -22,7 +22,5 @@ public class AlbumArtworkActivity extends AppCompatActivity {
         Picasso.with(this).load(imageUrl).into(imageView);
     }
 
-    public void onClickRemoveAlbum(ImageView view){
-    }
 
 }

@@ -12,7 +12,6 @@
         android:layout_width="269dp"
         android:layout_height="281dp"
         android:cropToPadding="false"
-        android:onClick="onClickRemoveAlbum"
         android:scaleType="fitXY"
         tools:layout_editor_absoluteX="55dp"
         tools:layout_editor_absoluteY="209dp"/>

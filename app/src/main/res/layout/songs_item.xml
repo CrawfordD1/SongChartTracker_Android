@@ -9,10 +9,10 @@
 
     <TextView
         android:id="@+id/ranking"
-        android:layout_width="70sp"
-        android:layout_height="70sp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_width="46dp"
+        android:layout_height="58dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="25dp"
         android:textColor="?attr/colorAccent"
         android:textSize="36sp"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -23,11 +23,11 @@
         android:id="@+id/title"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="0dp"
+        android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="16dp"
         android:textSize="20sp"
-        app:layout_constraintLeft_toRightOf="@+id/ranking"
+        app:layout_constraintLeft_toRightOf="@+id/imageView"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:text="Title"/>
@@ -36,12 +36,21 @@
         android:id="@+id/artist"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="0dp"
         android:textSize="16sp"
         android:textStyle="italic"
-        app:layout_constraintLeft_toRightOf="@+id/ranking"
         app:layout_constraintTop_toBottomOf="@+id/title"
-        tools:text="Artist"/>
+        tools:text="Artist"
+        app:layout_constraintLeft_toRightOf="@+id/imageView"
+        android:layout_marginLeft="8dp"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="97dp"
+        android:layout_height="93dp"
+        app:srcCompat="@mipmap/ic_launcher"
+        tools:layout_editor_absoluteY="5dp"
+        app:layout_constraintLeft_toRightOf="@+id/ranking"
+        android:layout_marginLeft="0dp"/>
 
 </android.support.constraint.ConstraintLayout>

@@ -37,6 +37,9 @@ public class SongChartsAdaptor extends ArrayAdapter<Song> {
         title.setText(currentSong.getTitle());
         TextView year = (TextView) listItemView.findViewById(R.id.artist);
         year.setText(currentSong.getArtist());
+        ImageView image = (ImageView) listItemView.findViewById(R.id.imageView);
+        Picasso.with(getContext()).load(currentSong.getUrl()).into(image);
+
         listItemView.setTag(currentSong);
 
         return listItemView;
